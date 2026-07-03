@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/*
+  AimRank design tokens (Tailwind v4 theme).
+  Dark esports palette: deep slate background, target-red accent.
+*/
+@theme inline {
+  --color-bg: #0e1116;
+  --color-surface: #151a21;
+  --color-edge: #242c38;
+  --color-ink: #e9edf3;
+  --color-muted: #8c97a6;
+  --color-accent: #ff4655;
+  --color-accent-soft: #ff46551a;
+  --color-good: #3ddc97;
+
+  --font-display: var(--font-chakra);
+  --font-mono: var(--font-jet);
+  --font-sans: var(--font-inter);
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+}
+
+/* Hide the OS cursor over the game canvas; we draw our own crosshair. */
+.game-canvas {
+  cursor: none;
+  touch-action: none;
+}
